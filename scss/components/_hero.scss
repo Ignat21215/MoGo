@@ -1,0 +1,97 @@
+.hero {
+    padding-top: 68px;
+    padding-bottom: 100px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hero-title {
+    text-align: center;
+    color: var(--titles-color);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0%;
+    line-height: 100%;
+    font-variant: small-caps;
+}
+
+.hero-subtitle {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--titles-color);
+    font-family: var(--third-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.hero-title::after,
+.team-title::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: var(--focus-text-color);
+    margin: 0 auto;
+}
+
+.team-title::after {
+    margin-top: 36px;
+    margin-bottom: 45px;
+}
+
+.hero-title::after {
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 70px;
+    justify-content: center;
+}
+
+.hero-item {
+    flex-basis: calc((100% - 200px) / 3);
+}
+
+.hero-article {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-article-title {
+    color: var(--titles-color);
+    font-variant: small-caps;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: auto;
+    padding-left: 20px;
+}
+
+.hero-article-desc {
+    color: var(--paragraph-color);
+    font-size: 15px;
+    font-family: var(--second-family);
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 19px;
+    padding-top: 20px;
+    width: 310px;
+}
+
+.hero-article-icon {
+    padding-top: 3px;
+    width: 37px;
+    height: 37px;
+}
